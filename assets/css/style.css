@@ -18,7 +18,7 @@ body {
 }
 
 .container-1 {
-  background-image: url(../imgs/spaceship4.png);
+  background-image: url(../imgs/spaceship4reduced.png);
   background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,7 +33,7 @@ body {
 }
 
 .container-1 .titulo {
-  background-image: url(../imgs/metal3.png);
+  background-image: url(../imgs/metal3reduced.png);
   background-size: 100%;
   height: 10vh;
   opacity: 1;
@@ -59,7 +59,7 @@ body {
 }
 
 .container-1 .select-passwords {
-  background-image: url(../imgs/metal3.png);
+  background-image: url(../imgs/metal3reduced.png);
   background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,7 +156,7 @@ body {
 }
 
 .container-respuesta {
-  background-image: url(../imgs/metal3.png);
+  background-image: url(../imgs/metal3reduced.png);
   background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,7 +184,7 @@ body {
 
 @media (max-width: 450px) {
   .container-1 {
-    background-image: url(../imgs/spaceship4.png);
+    background-image: url(../imgs/spaceship4reduced.png);
     background-size: 400px;
     width: 400px;
     margin: 2vh;
