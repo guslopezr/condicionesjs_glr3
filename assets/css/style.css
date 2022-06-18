@@ -282,8 +282,8 @@ body {
 */
 @media only screen and (orientation: portrait) {
   body {
-    height: 100%;
-    width: 900px;
+    height: 400px;
+    width: 500px;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
