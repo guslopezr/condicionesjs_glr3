@@ -31,12 +31,16 @@ body {
   padding: 5vh;
   height: 80vh;
   overflow: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container-1 .titulo {
   background-image: url(../imgs/metal3reduced.png);
   background-size: 100%;
-  height: 10vh;
+  height: 15%;
+  width: 90%;
   opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +77,8 @@ body {
       justify-content: space-around;
   background-color: #585858;
   padding: 10px;
-  height: 40vh;
+  height: 40%;
+  width: 90%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -84,7 +89,7 @@ body {
 }
 
 .container-1 .container-selector {
-  height: 5vh;
+  height: 25%;
   padding: 3vh;
   border-radius: 5%;
   display: -webkit-box;
@@ -108,6 +113,7 @@ body {
 .selector {
   width: 100px;
   margin: 1vh;
+  height: 60%;
   border-radius: 15%;
   font-family: "Audiowide", cursive;
   background-color: #282828;
@@ -117,7 +123,8 @@ body {
 }
 
 .button-container {
-  width: 40vh;
+  width: 30%;
+  height: 30%;
   background-image: url(../imgs/metal4.png);
   background-size: 100%;
   border-color: grey;
@@ -133,14 +140,25 @@ body {
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.button-container .button-ingresar {
+.button-container .enviarframe {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-container .enviarframe .button-ingresar {
   width: 80%;
   background-color: #404040;
   border-color: grey;
   color: #ededed;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 3vh;
+  padding: 2%;
   margin: 3%;
   font-family: "Audiowide", cursive;
   border-radius: 15%;
@@ -148,7 +166,7 @@ body {
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.9), 0 6.7px 5.3px rgba(0, 0, 0, 0.1), 0 12.5px 10px rgba(0, 0, 0, 0.1), 0 22.3px 17.9px rgba(0, 0, 0, 0.52), 0 41.8px 33.4px rgba(0, 0, 0, 0.56), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-.button-container .button-ingresar:hover {
+.button-container .enviarframe .button-ingresar:hover {
   letter-spacing: 3px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -162,6 +180,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 70%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -171,7 +190,7 @@ body {
   background-color: #585858;
   opacity: 1;
   color: white;
-  height: 15vh;
+  height: 15%;
   font-size: 150%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -186,6 +205,7 @@ body {
 .container-volver {
   background-image: url(../imgs/metal3reduced.png);
   background-size: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +218,7 @@ body {
   background-color: #585858;
   opacity: 1;
   color: white;
-  height: 15vh;
+  height: 15%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -212,6 +232,8 @@ body {
 .container-volver .container-volver-frame {
   background-image: url(../imgs/metal4.png);
   background-size: 100%;
+  width: 25%;
+  height: 70%;
   margin: 2%;
   border-color: grey;
   border-width: 10px;
@@ -220,6 +242,9 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5%;
   border: 5px solid black;
   -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
@@ -227,18 +252,18 @@ body {
 }
 
 .container-volver .container-volver-frame .button-retornar {
-  width: 30vh;
-  height: 5vh;
+  width: 100%;
+  height: 70%;
   background-size: 100%;
   background-color: #404040;
   border-color: grey;
   color: #ededed;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 1vh;
-  margin: 1vh;
+  padding: 3%;
+  margin: 1%;
   font-family: "Audiowide", cursive;
-  font-size: 70%;
+  font-size: 60%;
   border-radius: 15%;
   -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.9), 0 6.7px 5.3px rgba(0, 0, 0, 0.1), 0 12.5px 10px rgba(0, 0, 0, 0.1), 0 22.3px 17.9px rgba(0, 0, 0, 0.52), 0 41.8px 33.4px rgba(0, 0, 0, 0.56), 0 100px 80px rgba(0, 0, 0, 0.12);
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.9), 0 6.7px 5.3px rgba(0, 0, 0, 0.1), 0 12.5px 10px rgba(0, 0, 0, 0.1), 0 22.3px 17.9px rgba(0, 0, 0, 0.52), 0 41.8px 33.4px rgba(0, 0, 0, 0.56), 0 100px 80px rgba(0, 0, 0, 0.12);
@@ -250,5 +275,42 @@ body {
   transition: all 1s ease;
   cursor: pointer;
   background-color: #585858;
+}
+
+@media (max-width: 800px) {
+  .container-1 {
+    width: 90%;
+  }
+  .select-passwords {
+    max-width: 90%;
+  }
+  .container-selector {
+    width: 90%;
+  }
+  .button-container {
+    width: 90%;
+  }
+  .container-respuesta {
+    width: 90%;
+  }
+  .selector {
+    width: 35%;
+  }
+  .enviarframe {
+    width: 90%;
+  }
+  .button-ingresar {
+    max-width: 80%;
+  }
+  .container-volver {
+    width: 90%;
+  }
+  .container-volver-frame {
+    width: 90%;
+  }
+  .button-retornar {
+    width: 95%;
+    height: 95%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
