@@ -30,6 +30,7 @@ body {
   margin: 5vh;
   padding: 5vh;
   height: 80vh;
+  overflow: auto;
 }
 
 .container-1 .titulo {
@@ -249,43 +250,5 @@ body {
   transition: all 1s ease;
   cursor: pointer;
   background-color: #585858;
-}
-
-/* --- Responsividad --- */
-/*
-    @media (max-width: 450px) {
-        .container-1 {
-            background-image: $backgroundfx7;
-            background-size: 400px;
-            width: 400px;
-            margin: 2vh;
-            padding: 1vh;
-            height: 600px;
-        }
-        .container-selector {
-            height: 300px;
-            width: 80%;
-        }
-        .button-container {
-            height: 50%;
-            width: 90%;
-            justify-content: space-around;
-            align-items: center;
-        }
-        .selector {
-            width: 80px;
-        }
-        .button-ingresar {
-            height: 50%;
-        }
-    }
-*/
-@media only screen and (orientation: portrait) {
-  body {
-    height: 800px;
-    width: 600px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
 }
 /*# sourceMappingURL=style.css.map */
