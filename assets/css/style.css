@@ -182,33 +182,109 @@ body {
   border-radius: 5%;
 }
 
-@media (max-width: 450px) {
-  .container-1 {
-    background-image: url(../imgs/spaceship4reduced.png);
-    background-size: 400px;
-    width: 400px;
-    margin: 2vh;
-    padding: 1vh;
-    height: 600px;
-  }
-  .container-selector {
-    height: 300px;
-    width: 80%;
-  }
-  .button-container {
-    height: 50%;
-    width: 90%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+.container-volver {
+  background-image: url(../imgs/metal3reduced.png);
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #585858;
+  opacity: 1;
+  color: white;
+  height: 15vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.container-volver .container-volver-frame {
+  background-image: url(../imgs/metal4.png);
+  background-size: 100%;
+  margin: 2%;
+  border-color: grey;
+  border-width: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 5%;
+  border: 5px solid black;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.container-volver .container-volver-frame .button-retornar {
+  width: 30vh;
+  height: 5vh;
+  background-size: 100%;
+  background-color: #404040;
+  border-color: grey;
+  color: #ededed;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1vh;
+  margin: 1vh;
+  font-family: "Audiowide", cursive;
+  font-size: 70%;
+  border-radius: 15%;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.9), 0 6.7px 5.3px rgba(0, 0, 0, 0.1), 0 12.5px 10px rgba(0, 0, 0, 0.1), 0 22.3px 17.9px rgba(0, 0, 0, 0.52), 0 41.8px 33.4px rgba(0, 0, 0, 0.56), 0 100px 80px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.9), 0 6.7px 5.3px rgba(0, 0, 0, 0.1), 0 12.5px 10px rgba(0, 0, 0, 0.1), 0 22.3px 17.9px rgba(0, 0, 0, 0.52), 0 41.8px 33.4px rgba(0, 0, 0, 0.56), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.container-volver .container-volver-frame .button-retornar:hover {
+  letter-spacing: 3px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  cursor: pointer;
+  background-color: #585858;
+}
+
+/* --- Responsividad --- */
+/*
+    @media (max-width: 450px) {
+        .container-1 {
+            background-image: $backgroundfx7;
+            background-size: 400px;
+            width: 400px;
+            margin: 2vh;
+            padding: 1vh;
+            height: 600px;
+        }
+        .container-selector {
+            height: 300px;
+            width: 80%;
+        }
+        .button-container {
+            height: 50%;
+            width: 90%;
+            justify-content: space-around;
             align-items: center;
-  }
-  .selector {
-    width: 80px;
-  }
-  .button-ingresar {
-    height: 50%;
+        }
+        .selector {
+            width: 80px;
+        }
+        .button-ingresar {
+            height: 50%;
+        }
+    }
+*/
+@media only screen and (orientation: portrait) {
+  body {
+    height: 100vw;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
 /*# sourceMappingURL=style.css.map */
