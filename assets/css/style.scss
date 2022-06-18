@@ -239,6 +239,7 @@
     @media only screen and (orientation:portrait) {
         body {
             height: 100%;
+            width: 900px;
             transform: rotate(90deg);
         }
     }
