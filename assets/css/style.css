@@ -13,8 +13,6 @@ body {
   background-color: black;
   color: #ededed;
   font-family: "Audiowide", cursive;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .container-1 {
@@ -278,35 +276,46 @@ body {
 }
 
 @media (max-width: 800px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
   .container-1 {
-    width: 80%;
+    width: 99%;
+    overflow-x: hidden;
+    margin: 1%;
+    padding: 1%;
   }
   .select-passwords {
-    max-width: 90%;
+    max-width: 80%;
   }
   .container-selector {
-    width: 90%;
+    width: 80%;
   }
   .button-container {
     width: 90%;
   }
   .container-respuesta {
-    width: 90%;
+    width: 80%;
   }
   .selector {
     width: 35%;
   }
   .enviarframe {
-    width: 90%;
+    width: 80%;
   }
   .button-ingresar {
     max-width: 80%;
   }
   .container-volver {
-    width: 90%;
+    width: 80%;
+    height: 30%;
   }
   .container-volver-frame {
-    width: 90%;
+    width: 80%;
   }
   .button-retornar {
     width: 95%;
